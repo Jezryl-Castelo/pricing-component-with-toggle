@@ -134,8 +134,7 @@ h2 {
     margin-bottom: 44px;
     color: #4A4D60;
     align-items: center;
-    justify-content: center;
-    transition: transform 0.4s ease;    
+    justify-content: center;   
 }
 
 .annually {
@@ -184,11 +183,9 @@ ul,
 .professional .btn {
     background-image: none;
     margin-top: 24px;
-}
-
-.professional a {
     color: hsl(237, 63%, 64%);
 }
+
 /*---- Button ----*/
 .btn {
     width: 288px;
@@ -198,11 +195,9 @@ ul,
     border: none;
     margin-top: 20px;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-a {
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
     color: white;
     text-transform: uppercase;
 }
+
