@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(240, 240, 240);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    min-height: 100vh;
+}
+
+body::before {
+    content: '';
+    background-image: url('./images/bg-top.svg');
+	background-repeat: no-repeat;
+	background-position: top right;
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+}
+
+body::after {
+	content: '';
+	background-image: url('./images/bg-bottom.svg');
+	background-repeat: no-repeat;
+	background-position: bottom left;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+}
+
+header {
+    text-align: center;
+}
+
+h1 {
+    margin: 71px auto 54px auto;
+    font-size: 2rem;
+    color: #6E728E;
+}
+
+.toggle-text {
+    font-size: 0.8rem;
+    color: #6e728e;  
+}
+
+.toggle-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+.toggle-container label {
+    background-image: linear-gradient(#a3a8f0, #696fdd);
+    display: inline-block;
+    width: 56px;
+    height: 32px;
+    border-radius: 100px;
+    position: relative;
+    cursor: pointer;
+    margin: auto 20px;
+}
+
+.toggle-container input {
+    position: absolute;
+    left: -99999px;
+}
+
+.toggle-container .ball {
+    position: absolute;
+    top: 4px;
+    transition: transform 0.4s ease;
+}
+
+.toggle-container input:checked + label .ball {
+    transform: translateX(-24px);
+}
+
+.toggle-img one {
+    width: 56px;
+    height: 34px;
+    display: block;
+    position: relative;
+}
+
+.image-img two {
+    height: 24px;
+}
+
+.circle {
+    position: absolute;
+    margin: 4px 4px 4px 27px;
+    border: none;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    height: 453px;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-template-columns: 350px 350px 350px;
+    margin-top: 87px;
+    color: #6E728E;
+}
+
+.card {
+    grid: flex;
+    width: 350px;
+    padding: 30px;
+    background-color: hsl(240, 78%, 98%);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+h2 {
+    font-size: 1.125rem;
+    color: #6E728E;
+    margin-bottom: 24px;
+}
+/*---- Pricing ----*/
+.price {
+    display: flex;
+    font-size: 4rem;
+    margin-bottom: 44px;
+    color: #4A4D60;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.4s ease;    
+}
+
+.annually {
+    display: none;
+}
+
+.show-annually .price .annually {
+    display: flex;
+}
+
+.show-annually .price .monthly {
+    display: none;
+}
+/*---- Details ----*/
+ul,
+.list-2 {
+    border-top: 0.5px solid hsl(234, 14%, 74%);
+    border-bottom: 1px solid hsl(234, 14%, 74%);
+}
+
+.list-2 {
+    padding: 15px 0;
+}
+
+.details {
+    font-size: 0.8rem;
+    margin: 14px auto;
+    list-style: none;
+}
+/*---- Professional Main ----*/
+.card.professional {
+    color: white;
+    height: 500px;
+    background-image: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    border-radius: 10px;
+}
+.professional h2 {
+    margin-bottom: 58px;
+}
+
+.professional h2,
+.professional .price {
+    color: white;
+}
+
+.professional .btn {
+    background-image: none;
+    margin-top: 24px;
+}
+
+.professional a {
+    color: hsl(237, 63%, 64%);
+}
+/*---- Button ----*/
+.btn {
+    width: 288px;
+    height: 44px;
+    background-image: linear-gradient(#a3a8f0, #696fdd) ;
+    border-radius: 6px;
+    border: none;
+    margin-top: 20px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-transform: uppercase;
+}
